@@ -19,22 +19,22 @@
             <div id="logo_encre">
 
                 <div id="logo_titre">
-                    <div>
-                        <img src="Reservia@3x.png" alt="Logo Reservia">
-                    </div>
+
+                    <img src="Reservia@3x.png" alt="Logo Reservia">
+
                     <nav id="Encre">
-                        <ul>
-                            <div>
-                                <li class="encre1"><a href="#hebergement">Hébergement</a></li>
-                            </div>
-                            <div>
-                                <li class="encre2"><a href="#activiter">Activités</a></li>
-                            </div>
-                            <div>
-                                <li class="inscription"><a href="#">S'inscrire</a></li>
-                            </div>
-                        </ul>
+
+                        <div class="pour">
+                            <a class="encre encre2 encre-heb" href="#hebergement">Hébergements</a>
+                        </div>
+                        <div class="pour">
+                            <a class="encre encre2 encre-activ" href="#activiter">Activités</a>
+                        </div>
+                        <div>
+                            <a class="inscription encre" href="#">S'inscrire</a>
+                        </div>
                     </nav>
+
                 </div>
 
                 <div id="Titre_top">
@@ -48,8 +48,9 @@
 
                 <div id="recherche">
                     <div class="map"><i class="fas fa-map-marker-alt"></i></div>
-                    <input type="text" name="Marseille.France" id="Marseille.France">
+                    <input type="text" placeholder="Marseille, France">
                     <p>Rechercher</p>
+                    <a href="#" class="recherche_mobile"><i class="fas fa-search"></i></a>
                 </div>
 
                 <div id="block_filtre">
@@ -100,7 +101,7 @@
         </header>
 
 
-        <section id="hebergement">
+        <section>
 
             <article>
 
@@ -108,7 +109,7 @@
                 <div>
                     <div id="block1">
                         <a href="#" class="carte1">
-                            <div><img class="taille_image_b1" src="image.hebergement/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="lit super poser"></div>
+                            <img class="taille_image_b1" src="image.hebergement/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="lit super poser">
                             <div class="test_reussi">
                                 <div class="test_99">
                                     <h4>Auberge la Cannebière</h4>
@@ -222,12 +223,12 @@
                     <h2><i class="fas fa-chart-line"></i></h2>
                 </div>
                 <div id="block_populaire">
-                    <div class="carte_populaire">
+                    <a href="#" class="carte_populaire">
                         <div><img src="image.populaire/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt=""></div>
                         <div class="info_pop">
-                            <div>
+                            <div class="titre_pop">
                                 <h4>Hôtel le soleil du matin</h4>
-                                <p>Nuit à partir de <strong>128€</strong></p>
+                                <p><span>Nuit à partir de <strong>128€</strong></span></p>
                             </div>
                             <div class="etoile_cartes">
                                 <div class="etoile_bleu"><i class="fas fa-star"></i></div>
@@ -237,13 +238,14 @@
                                 <div class="etoile_bleu"><i class="fas fa-star"></i></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carte_populaire">
+                    </a>
+
+                    <a href="#" class="carte_populaire">
                         <div><img src="image.populaire/aw-creative-VGs8z60yT2c-unsplash.jpg" alt=""></div>
                         <div class="info_pop">
-                            <div>
+                            <div class="titre_pop">
                                 <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-                                <p>Nuit à partir de <strong>71€</strong></p>
+                                <p><span>Nuit à partir de <strong>71€</strong></span></p>
                             </div>
                             <div class="etoile_cartes">
                                 <div class="etoile_bleu"><i class="fas fa-star"></i></div>
@@ -253,13 +255,14 @@
                                 <div class="etoile_grise"><i class="fas fa-star"></i></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carte_populaire">
+                    </a>
+
+                    <a href="#" class="carte_populaire">
                         <div><img src="image.populaire/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt=""></div>
                         <div class="info_pop">
-                            <div>
+                            <div class="titre_pop">
                                 <h4>Hôtel Tout bleu et Blanc</h4>
-                                <p>Nuit à partir de <strong>68€</strong></p>
+                                <p><span>Nuit à partir de <strong>68€</strong></span></p>
                             </div>
                             <div class="etoile_cartes">
                                 <div class="etoile_bleu"><i class="fas fa-star"></i></div>
@@ -269,7 +272,7 @@
                                 <div class="etoile_grise"><i class="fas fa-star"></i></div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </aside>
 
@@ -282,7 +285,9 @@
 
                     <a href="" class="carte_activ1">
                         <img src="image.activités/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
-                        <h4>Vieux port</h4>
+                        <div>
+                            <h4>Vieux port</h4>
+                        </div>
                     </a>
 
                     <div class="espace_activ">
@@ -295,7 +300,6 @@
                             <img src="image.activités/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
                             <h4>Îles du Frioul</h4>
                         </a>
-
                     </div>
 
                     <a href="" class="carte_activ1">
@@ -324,7 +328,7 @@
         <div id="fin">
             <div class="list">
                 <ul>
-                    <h4>A Propos</h4>
+                    <p class="titre_liste">A Propos</p>
                     <li>Fonctionnement du site</li>
                     <li>Conditions générales de vente</li>
                     <li>Données et confidentialité</li>
@@ -334,15 +338,17 @@
 
             <div class="list">
                 <ul>
-                    <h4>Nos hebergements</h4>
-                    <li>Charte qualité</li>
+                    <p class="titre_liste">Nos hebergements</p>
+
+                    <li><a href="#">Charte qualité</a></li>
+
                     <li>Soumettre votre hôtel</li>
                 </ul>
             </div>
 
             <div class="list">
                 <ul>
-                    <h4>Assistance</h4>
+                    <p class="titre_liste">Assistance</p>
                     <li>Centre d'aide</li>
                     <li>Nous contacter</li>
                 </ul>
