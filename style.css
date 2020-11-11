@@ -232,7 +232,7 @@ nav {
 
 /*Block_hebergement*/
 
-#hebergement {
+section {
     display: flex;
     flex-flow: wrap-reverse;
     justify-content: space-between;
@@ -263,11 +263,10 @@ article h3 {
     justify-content: space-between;
     align-content: space-between;
     margin: 0 40px 0 40px;
-    width: auto;
 }
 
 .carte1 {
-    height: 200px;
+    min-height: 200px;
     width: 28%;
     background-color: white;
     display: flex;
@@ -275,7 +274,6 @@ article h3 {
     flex-wrap: nowrap;
     box-shadow: 4px 4px 12px #F2F2F2, -1px -1px 0 #F2F2F2;
     border-radius: 20px;
-    line-height: 0.25em;
     margin: 20px 10px 20px 10px;
     padding: 4px;
 }
@@ -288,15 +286,25 @@ article h3 {
 }
 
 .test_99 {
-    line-height: 0.15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5px;
 }
 
 .test_99 p {
     font-size: 0.90em;
+    height: auto;
+    margin-top: -20px;
 }
 
 .test_reussi {
     margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    margin-top: -15px;
 }
 
 aside {
@@ -319,10 +327,8 @@ aside {
 #block_populaire {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
     justify-content: space-between;
     min-height: 500px;
-    width: auto;
     margin: 0 45px 20px 45px;
 }
 
@@ -331,7 +337,6 @@ aside {
     width: 100%;
     background-color: white;
     display: flex;
-    flex-direction: row;
     box-shadow: 4px 4px 12px #F2F2F2, -1px -1px 0 #F2F2F2;
     border-radius: 20px;
     padding: 1%;
@@ -342,9 +347,7 @@ aside {
     height: 100%;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
-    position: relative;
     overflow: hidden;
-    justify-items: space-between;
     margin-right: 10px;
 }
 
@@ -370,7 +373,7 @@ aside {
 #all_carte_activ {
     display: flex;
     flex-flow: wrap row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: space-between;
 }
 
@@ -449,7 +452,11 @@ aside {
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .carte_activ4 img {
@@ -469,6 +476,7 @@ aside {
     justify-content: space-between;
     height: 450px;
     width: 250px;
+    margin-right: 40px;
 }
 
 #activiter h4 {
@@ -511,35 +519,12 @@ ul {
         display: flex;
         justify-content: center;
     }
-    .carte1 {
-        height: 200px;
-    }
-    #block_populaire {
-        display: flex;
-        flex-direction: row;
-    }
-    .carte_populaire {
-        height: 200px;
-        width: 28%;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        box-shadow: 4px 4px 12px #F2F2F2, -1px -1px 0 #F2F2F2;
-        border-radius: 20px;
-        line-height: 0.25em;
-        margin: 20px 10px 20px 10px;
-        padding: 4px;
-    }
-    .carte_populaire img {
-        height: 7em;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-    }
-    #hebergement {
+    section {
         display: flex;
         flex-direction: column-reverse;
+    }
+    #block_populaire {
+        align-content: center;
     }
     aside {
         width: 100%;
@@ -608,7 +593,7 @@ ul {
         -ms-border-radius: 15px 15px 15px 15px;
         -o-border-radius: 15px 15px 15px 15px;
     }
-    #hebergement {
+    section {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -663,7 +648,9 @@ ul {
         flex-direction: column;
         align-items: center;
     }
-    #recherche p {}
+    .espace_activ {
+        margin-right: 0;
+    }
 }
 
 .etoile_cartes {
