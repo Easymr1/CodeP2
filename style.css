@@ -1,12 +1,12 @@
 /* Page dimension */
 
-#All_Page {
-    margin: 2.5%;
+body {
+    font-family: 'Raleway', sans-serif;
 }
 
-@font-face {
-    font-family: 'Raleway';
-    src: url(Raleway.eot);
+#All_Page {
+    margin: 2.5%;
+    font-family: ral;
 }
 
 body {
@@ -232,7 +232,7 @@ nav {
 
 /*Block_hebergement*/
 
-section {
+#hebergement {
     display: flex;
     flex-flow: wrap-reverse;
     justify-content: space-between;
@@ -272,7 +272,7 @@ article h3 {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    box-shadow: 4px 4px 12px #F2F2F2, -1px -1px 0 #F2F2F2;
+    box-shadow: 4px 4px 12px rgb(229, 229, 229);
     border-radius: 20px;
     margin: 20px 10px 20px 10px;
     padding: 4px;
@@ -311,7 +311,6 @@ aside {
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 30%;
-    min-height: 600px;
     display: flex;
     flex-direction: column;
 }
@@ -321,25 +320,26 @@ aside {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 30px 20px 45px;
+    margin: 20px 30px 10px 45px;
 }
 
 #block_populaire {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 500px;
-    margin: 0 45px 20px 45px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 20px 0 20px;
 }
 
 .carte_populaire {
     height: 140px;
-    width: 100%;
+    width: 22rem;
     background-color: white;
     display: flex;
-    box-shadow: 4px 4px 12px #F2F2F2, -1px -1px 0 #F2F2F2;
+    box-shadow: 4px 4px 12px rgb(229, 229, 229);
     border-radius: 20px;
     padding: 1%;
+    margin: 10px;
 }
 
 .carte_populaire img {
@@ -397,7 +397,6 @@ aside {
     position: relative;
     object-fit: cover;
     overflow: hidden;
-    position: relative;
 }
 
 .carte_activ2 {
@@ -499,6 +498,7 @@ ul {
     flex-wrap: wrap;
     background-color: #F2F2F2;
     padding-bottom: 20px;
+    margin: 0 -10px 0 -10px;
 }
 
 #fin li {
@@ -512,25 +512,30 @@ ul {
 .titre_liste {
     font-weight: bold;
     font-size: 1.1em;
+    margin-left: 40px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1250px) {
     #block1 {
         display: flex;
         justify-content: center;
     }
-    section {
+    #hebergement {
         display: flex;
         flex-direction: column-reverse;
     }
     #block_populaire {
         align-content: center;
     }
+    .carte_populaire {
+        margin: 1rem;
+    }
     aside {
         width: 100%;
     }
     article {
         width: 100%;
+        background-color: white;
     }
 }
 
@@ -593,14 +598,13 @@ ul {
         -ms-border-radius: 15px 15px 15px 15px;
         -o-border-radius: 15px 15px 15px 15px;
     }
-    section {
+    #hebergement {
         display: flex;
         flex-direction: column-reverse;
     }
     article {
         width: 100%;
         margin: 2.5px;
-        background-color: white;
     }
     article h2 {
         margin-left: 25px;
@@ -617,9 +621,10 @@ ul {
     }
     aside {
         width: 100%;
+        padding-bottom: 20px;
     }
     .carte_populaire {
-        width: 100%;
+        width: 22rem;
     }
     #activiter h2 {
         margin-left: 25px;
