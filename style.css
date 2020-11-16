@@ -393,7 +393,6 @@ aside {
     display: flex;
     height: auto;
     width: auto;
-    position: relative;
     object-fit: cover;
     overflow: hidden;
 }
