@@ -391,7 +391,6 @@ aside {
 
 .carte_activ1 img {
     display: flex;
-    align-self: center;
     height: auto;
     width: auto;
     position: relative;
@@ -412,7 +411,6 @@ aside {
 
 .carte_activ2 img {
     display: flex;
-    align-self: center;
     height: 12em;
     width: 100%;
     position: relative;
@@ -434,7 +432,6 @@ aside {
 
 .carte_activ3 img {
     display: flex;
-    align-self: center;
     height: 10em;
     width: 100%;
     position: relative;
@@ -452,15 +449,10 @@ aside {
     flex-direction: column;
     overflow: hidden;
     border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
 }
 
 .carte_activ4 img {
     display: flex;
-    align-self: center;
     height: 10em;
     width: 100%;
     position: relative;
@@ -528,7 +520,8 @@ ul {
         align-content: center;
     }
     .carte_populaire {
-        margin: 1rem;
+        margin: 1rem 2rem 2rem 1rem;
+        width: 18rem;
     }
     aside {
         width: 100%;
@@ -539,7 +532,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     #All_Page {
         margin: 0;
     }
@@ -624,7 +617,7 @@ ul {
         padding-bottom: 20px;
     }
     .carte_populaire {
-        width: 22rem;
+        width: 90%;
     }
     #activiter h2 {
         margin-left: 25px;
