@@ -170,6 +170,7 @@ nav {
     margin: 20px;
     padding-right: 10px;
     align-content: center;
+    transition: all 0.4s ease-in-out;
 }
 
 .size_fontawesom {
@@ -218,8 +219,8 @@ nav {
 }
 
 .button:hover {
-    filter: opacity(50%);
-    -webkit-filter: opacity(50%);
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem gray;
 }
 
 .button:active {
@@ -370,11 +371,19 @@ aside {
 
 /*Block_Activité*/
 
+#activiter {
+    margin: 50px 0 50px 0;
+}
+
 #all_carte_activ {
     display: flex;
     flex-flow: wrap row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: space-between;
+}
+
+.carte__activ--titre h4 {
+    margin-left: 1rem;
 }
 
 .carte_activ1 {
@@ -386,13 +395,11 @@ aside {
     flex-direction: column;
     overflow: hidden;
     border-radius: 20px;
-    margin-bottom: 40px;
 }
 
 .carte_activ1 img {
     display: flex;
-    height: auto;
-    width: auto;
+    height: 100%;
     object-fit: cover;
     overflow: hidden;
 }
@@ -409,13 +416,11 @@ aside {
 }
 
 .carte_activ2 img {
-    display: flex;
     height: 12em;
     width: 100%;
     position: relative;
     object-fit: cover;
     overflow: hidden;
-    position: relative;
 }
 
 .carte_activ3 {
@@ -430,13 +435,11 @@ aside {
 }
 
 .carte_activ3 img {
-    display: flex;
     height: 10em;
     width: 100%;
     position: relative;
     object-fit: cover;
     overflow: hidden;
-    position: relative;
 }
 
 .carte_activ4 {
@@ -451,10 +454,8 @@ aside {
 }
 
 .carte_activ4 img {
-    display: flex;
     height: 10em;
     width: 100%;
-    position: relative;
     object-fit: cover;
     overflow: hidden;
     position: relative;
@@ -464,17 +465,6 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 450px;
-    width: 250px;
-    margin-right: 40px;
-}
-
-#activiter h4 {
-    margin-left: 10px;
-}
-
-#activiter {
-    margin-top: 50px;
 }
 
 
