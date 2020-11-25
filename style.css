@@ -529,6 +529,11 @@ ul {
         height: auto;
         background-color: white;
     }
+    #all_carte_activ {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+    }
 }
 
 @media screen and (max-width: 650px) {
