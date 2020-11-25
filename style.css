@@ -267,15 +267,15 @@ article h3 {
 }
 
 .carte1 {
-    min-height: 200px;
-    width: 28%;
+    height: 200px;
+    width: 230px;
     background-color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     box-shadow: 4px 4px 12px rgb(229, 229, 229);
     border-radius: 20px;
-    margin: 20px 10px 20px 10px;
+    margin: 10px;
     padding: 4px;
 }
 
@@ -339,7 +339,7 @@ aside {
     display: flex;
     box-shadow: 4px 4px 12px rgb(229, 229, 229);
     border-radius: 20px;
-    padding: 1%;
+    padding: 4px;
     margin: 10px;
 }
 
@@ -372,7 +372,7 @@ aside {
 /*Block_Activité*/
 
 #activiter {
-    margin: 50px 0 50px 0;
+    margin: 30px -10px 30px -10px;
 }
 
 #all_carte_activ {
@@ -380,6 +380,7 @@ aside {
     flex-flow: wrap row;
     justify-content: space-between;
     align-content: space-between;
+    width: 100%;
 }
 
 .carte__activ--titre h4 {
@@ -395,6 +396,7 @@ aside {
     flex-direction: column;
     overflow: hidden;
     border-radius: 20px;
+    margin: 10px;
 }
 
 .carte_activ1 img {
@@ -413,6 +415,7 @@ aside {
     flex-direction: column;
     overflow: hidden;
     border-radius: 20px;
+    margin: 10px;
 }
 
 .carte_activ2 img {
@@ -432,6 +435,7 @@ aside {
     flex-direction: column;
     overflow: hidden;
     border-radius: 20px;
+    margin: 10px;
 }
 
 .carte_activ3 img {
@@ -451,6 +455,7 @@ aside {
     flex-direction: column;
     overflow: hidden;
     border-radius: 20px;
+    margin: 10px;
 }
 
 .carte_activ4 img {
@@ -500,6 +505,9 @@ ul {
     #block1 {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-around;
     }
     #hebergement {
         display: flex;
@@ -507,21 +515,23 @@ ul {
     }
     #block_populaire {
         align-content: center;
+        height: auto;
     }
     .carte_populaire {
-        margin: 1rem 2rem 2rem 1rem;
-        width: 18rem;
+        margin: 1rem;
+        width: 25rem;
     }
     aside {
         width: 100%;
     }
     article {
         width: 100%;
+        height: auto;
         background-color: white;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 650px) {
     #All_Page {
         margin: 0;
     }
@@ -604,9 +614,6 @@ ul {
     aside {
         width: 100%;
         padding-bottom: 20px;
-    }
-    .carte_populaire {
-        width: 90%;
     }
     #activiter h2 {
         margin-left: 25px;
