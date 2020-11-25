@@ -5,7 +5,7 @@ body {
 }
 
 #All_Page {
-    margin: 2.5%;
+    margin: 40px;
     font-family: ral;
 }
 
@@ -69,8 +69,8 @@ nav {
 
 .encre2:hover {
     color: #0065FC;
-    border-top: solid 3px #0065FC;
-    padding-top: 30px;
+    border-top: solid 2px #0065FC;
+    padding-top: 35px;
 }
 
 .inscription:hover {
